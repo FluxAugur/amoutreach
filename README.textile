@@ -2,9 +2,9 @@ h1. !http://railsapps.github.io/images/rails-36x36.jpg(Rails App for a Startup P
 
 Rails 3.2 example application for a “beta launching soon” startup prelaunch signup site.
 
-* "Rails Prelaunch Signup App":http://railsapps.github.io/rails-prelaunch-signup/ project page
+* "Rails Prelaunch Signup App":http://railsapps.github.io/amoutreach/ project page
 
-Best of all, there's a "detailed tutorial":https://tutorials.railsapps.org/rails-prelaunch-signup to show how it is built.
+Best of all, there's a "detailed tutorial":https://tutorials.railsapps.org/amoutreach to show how it is built.
 
 You can build this application in only a few minutes using the "Rails Composer":http://railsapps.github.io/rails-composer/ tool.
 
@@ -15,7 +15,7 @@ Read an "interview with Michael Gajda":http://blog.railsapps.org/post/2254354122
 h4. Notable Forks
 
 |_. Alternative version                  |_. |_. Author |
-| "rails-prelaunch-signup-1click":https://github.com/chadokruse/rails-prelaunch-signup-1click | single-click email submit (no modal) | "Chad Kruse":http://twitter.com/chadkruser |
+| "amoutreach-1click":https://github.com/chadokruse/amoutreach-1click | single-click email submit (no modal) | "Chad Kruse":http://twitter.com/chadkruser |
 
 h2. !http://twitter-badges.s3.amazonaws.com/t_logo-a.png(Follow on Twitter)!:http://www.twitter.com/rails_apps Follow on Twitter
 
@@ -152,7 +152,7 @@ An in-depth tutorial is available (subscription required). Subscriptions provide
 
 You can use the starter app without getting the tutorial. The tutorial provides a detailed explanation of the code:
 
-h4. "Get the Tutorial":https://tutorials.railsapps.org/rails-prelaunch-signup
+h4. "Get the Tutorial":https://tutorials.railsapps.org/amoutreach
 
 The tutorial documents each step to follow to create the application. Every step is documented concisely, so a complete beginner can create this application without any additional knowledge. However, no explanation is offered for any of the steps, so if you are a beginner, you’re advised to look for an introduction to Rails elsewhere. If you’re new to Rails, see recommendations for a "Rails tutorial":https://tutorials.railsapps.org/rails-tutorial and a list of top resources for "Ruby and Rails":http://railsapps.github.io/ruby-and-rails.html. The article "What is Ruby? And Rails?":http://railsapps.github.io/what-is-ruby-rails.html is a good place to get a basic introduction to Rails.
 
@@ -205,7 +205,7 @@ h3. Clone
 If you want to copy and customize the app with changes that are only useful for your own project, you can clone the GitHub repo. You'll need to search-and-replace the project name throughout the application. You probably should generate the app instead (see below). To clone:
 
 <pre>
-$ git clone git://github.com/RailsApps/rails-prelaunch-signup.git
+$ git clone git://github.com/RailsApps/amoutreach.git
 </pre>
 
 You'll need "git":http://git-scm.com/ on your machine. See "Rails and Git":http://railsapps.github.io/rails-git.html.
@@ -217,14 +217,14 @@ If you want to use the project as a starter app, use the "Rails Composer":http:/
 To build the example application, run the command:
 
 <pre>
-$ rails new rails-prelaunch-signup -m https://raw.github.com/RailsApps/rails-composer/master/composer.rb -T
+$ rails new amoutreach -m https://raw.github.com/RailsApps/rails-composer/master/composer.rb -T
 </pre>
 
 Use the @-T@ flag to skip Test::Unit files.
 
 The @$@ character indicates a shell prompt; don't include it when you run the command.
 
-This creates a new Rails app named @rails-prelaunch-signup@ on your computer. You can use a different name if you wish.
+This creates a new Rails app named @amoutreach@ on your computer. You can use a different name if you wish.
 
 You'll see a prompt:
 
@@ -232,7 +232,7 @@ You'll see a prompt:
 question  Install an example application?
       1)  I want to build my own application
       2)  membership/subscription/saas
-      3)  rails-prelaunch-signup
+      3)  amoutreach
       4)  rails3-bootstrap-devise-cancan
       5)  rails3-devise-rspec-cucumber
       6)  rails3-mongoid-devise
@@ -240,7 +240,7 @@ question  Install an example application?
       8)  rails3-subdomains
 </pre>
 
-Choose *rails-prelaunch-signup*. The Rails Composer tool may give you other options (other choices may have been added since these notes were written).
+Choose *amoutreach*. The Rails Composer tool may give you other options (other choices may have been added since these notes were written).
 
 The application generator template will ask you for additional preferences:
 
@@ -471,7 +471,7 @@ rake secret
 Edit your *config/initializers/secret_token.rb* file to add the secret token:
 
 <pre>
-RailsPrelaunchSignup::Application.config.secret_token = '...some really long, random string...'
+AMOutreach::Application.config.secret_token = '...some really long, random string...'
 </pre>
 
 h2. Test the App
@@ -556,7 +556,7 @@ Please send the author a message, create an issue, or submit a pull request if y
 
 h2. Issues
 
-Please create a "GitHub issue":http://github.com/RailsApps/rails-prelaunch-signup/issues if you identify any problems or have suggestions for improvements.
+Please create a "GitHub issue":http://github.com/RailsApps/amoutreach/issues if you identify any problems or have suggestions for improvements.
 
 h2. Where to Get Help
 
@@ -568,7 +568,7 @@ h2. Contributing
 
 If you make improvements to this application, please share with others.
 
-Send the author a message, create an "issue":http://github.com/RailsApps/rails-prelaunch-signup/issues, or fork the project and submit a pull request.
+Send the author a message, create an "issue":http://github.com/RailsApps/amoutreach/issues, or fork the project and submit a pull request.
 
 If you add functionality to this application, create an alternative implementation, or build an application that is similar, please contact me and I'll add a note to the README so that others can find your work.
 
@@ -593,7 +593,7 @@ h2. Useful Links
 | "What is Ruby on Rails?":http://railsapps.github.io/what-is-ruby-rails.html | "Heroku and Rails":http://railsapps.github.io/rails-heroku-tutorial.html | "Devise with CanCan and Twitter Bootstrap":https://tutorials.railsapps.org/rails3-bootstrap-devise-cancan |
 | "Rails Tutorial":https://tutorials.railsapps.org/rails-tutorial | "JavaScript and Rails":http://railsapps.github.io/rails-javascript-include-external.html | "Rails Membership Site with Stripe":https://tutorials.railsapps.org/rails-stripe-membership-saas |
 | "Installing Rails":http://railsapps.github.io/installing-rails.html | "Rails Environment Variables":http://railsapps.github.io/rails-environment-variables.html | "Rails Subscription Site with Recurly":https://tutorials.railsapps.org/rails-recurly-subscription-saas |
-| "Updating Rails":http://railsapps.github.io/updating-rails.html | "Git and Rails":http://railsapps.github.io/rails-git.html | "Startup Prelaunch Signup Application":http://railsapps.github.io/tutorial-rails-prelaunch-signup.html |
+| "Updating Rails":http://railsapps.github.io/updating-rails.html | "Git and Rails":http://railsapps.github.io/rails-git.html | "Startup Prelaunch Signup Application":http://railsapps.github.io/tutorial-amoutreach.html |
 | "Rails Composer":http://railsapps.github.io/rails-composer/ | "Email and Rails":http://railsapps.github.io/rails-send-email.html | "Devise with RSpec and Cucumber":http://railsapps.github.io/tutorial-rails-devise-rspec-cucumber.html |
 | "Rails Examples":http://railsapps.github.io/ | "Haml and Rails":http://railsapps.github.io/rails-haml.html | "Devise with Mongoid":http://railsapps.github.io/tutorial-rails-mongoid-devise.html |
 | "Rails Starter Apps":http://railsapps.github.io/rails-examples-tutorials.html | "Rails Application Layout":http://railsapps.github.io/rails-default-application-layout.html | "OmniAuth with Mongoid":http://railsapps.github.io/tutorial-rails-mongoid-omniauth.html |
