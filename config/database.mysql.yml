@@ -1,19 +1,20 @@
 development:
   adapter: mysql2
   encoding: utf8
+
   database: <%= ENV['AMOUTREACH_DEV_DB_DATABASE'] || 'amoutreach_development' %>
   pool: 5
-  username: <%= ENV['AMOUTREACH_DEV_DB_USER'] || 'root' %>
-  password: <%= ENV['AMOUTREACH_DEV_DB_PASSWORD'] %>
+  username: 'howl' # <%= ENV['FLUXCO_DE_DEV_DB_USER'] || 'postgres' %>
+  password: 'welovebubbles' # <%= ENV['FLUXCO_DE_DEV_DB_PASSWORD'] %>
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
   # domain sockets, so uncomment these lines.
-  host: <%= ENV['AMOUTREACH_DEV_DB_HOST'] || 'localhost' %>
+  host: <%= ENV['FLUXCO_DE_DEV_DB_HOST'] || 'localhost' %>
 
   # The TCP port the server listens on. Defaults to 5432.
   # If your server runs on a different port number, change accordingly.
-  port: <%= ENV['AMOUTREACH_DEV_DB_PORT'] || '5432' %>
+  port: 3306 # <%= ENV['FLUXCO_DE_DEV_DB_PORT'] || '5432' %>
 
   # Schema search path. The server defaults to $user,public
   #schema_search_path: myapp,sharedapp,public
@@ -30,12 +31,13 @@ development:
 test: &test
   adapter: mysql2
   encoding: utf8
-  database: <%= ENV['AMOUTREACH_TEST_DB_DATABASE'] || 'amoutreach_test' %><%= ENV['TEST_ENV_NUMBER'] %>
+
+  database: <%= ENV['FLUXCO_DE_TEST_DB_DATABASE'] || 'fluxco_de_test' %><%= ENV['TEST_ENV_NUMBER'] %>
   pool: 5
-  username: <%= ENV['AMOUTREACH_TEST_DB_USER'] || 'root' %>
-  password: <%= ENV['AMOUTREACH_TEST_DB_PASSWORD'] %>
-  host: <%= ENV['AMOUTREACH_TEST_DB_HOST'] || 'localhost' %>
-  port: <%= ENV['AMOUTREACH_TEST_DB_PORT'] || '5432' %>
+  username: 'howl' # <%= ENV['FLUXCO_DE_TEST_DB_USER'] || 'postgres' %>
+  password: 'welovebubbles' # <%= ENV['FLUXCO_DE_TEST_DB_PASSWORD'] %>
+  host: <%= ENV['FLUXCO_DE_TEST_DB_HOST'] || 'localhost' %>
+  port: 3306 # <%= ENV['FLUXCO_DE_TEST_DB_PORT'] || '5432' %>
 
 production:
   adapter: mysql2
@@ -47,5 +49,5 @@ production:
   host: <%= ENV['AMOUTREACH_PROD_DB_HOST'] || 'localhost'
   port: 3306
 
-www:
-  <<: *production%
+cucumber:
+  <<: *test%
